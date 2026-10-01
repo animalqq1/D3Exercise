@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Observable</title>
+    <script src="https://cdn.jsdelivr.net/npm/d3@6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.1"></script>
+</head>
+
+<body>
+    <!-- Each day will get a div like this, each with a unique class so we can select the right pieces -->
+    <div class='Day1'>
+        <h3>Day 1</h3>
+        <!-- Each of these svg pieces are what the JS will work on to draw stuff, each has a unique ID to allow selection -->
+        <svg id="svgHTML1" height="40" width="40" style="border:1px solid #ccc" />
+        <svg id="svgHTML2" height="40" width="160" style="border: 1px solid #ccc" />
+    </div>
+    <!-- Each day will live in its own JS file, associated with the adjacent div -->
+    <script src="learningD3Day1.js"></script>
+
+    <div class='Day2'>
+        <h3>Day 2</h3>
+        <!-- This day has some interactive components, so here we need to create a few sliders and read their values in the JS -->
+        <input id="ySlider" name="X slider" type=range min=0 max=140>
+        <input id="xSlider" name="Y slider" type=range min=0 max=4>
+        <input id="colorSlider" name="Color slider" type=range min=0 max=100>
+        <svg id="svgHTML1" width="160" height="160" style="border: 1px solid #ccc" />
+        <svg id="svgHTML2" height="160" width="160" style="border: 1px solid #ccc" />
+    </div>
+    <script src="learningD3Day2.js"></script>
+
+    <div class='Day3'>
+        <h3>Day 3</h3>
+        <svg id="svgHTML1" width="160" height="160" style="border: 1px solid #ccc" />
+    </div>
+    <script src="learningD3Day3.js"></script>
+
+    <div class='Day4'>
+        <h3>Day 4</h3>
+        <svg id="svgHTML1" width="300" height="130" style="border:1px solid #ccc" />
+    </div>
+    <script src="learningD3Day4.js"></script>
+
+    <div class='Day5'>
+        <h3>Day 5</h3>
+        <svg id="svgHTML1" width="900" height="500" />
+    </div>
+    <script src="learningD3Day5.js"></script>
+
+    <div class="Day6">
+        <h3>Day 6 — Donut Chart</h3>
+        <svg id="svgDay6" width="440" height="360"></svg>
+    </div>
+    <script src="learningD3Day6.js"></script>
+
+    <div class="Day7">
+        <h3>Day 7 — Line Chart</h3>
+        <svg id="svgDay7" width="900" height="500"></svg>
+    </div>
+    <script src="learningD3Day7.js"></script>
+
+</body>
